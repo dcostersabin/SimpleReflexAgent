@@ -24,11 +24,9 @@ class SimpleReflexAgent(Environment):
                 print("Moving Cleaner To Room B....")
 
                 if Environment.location['B'] == 1:
-                    print
-                    ("Room B Is Dirty")
+                    print("Room B Is Dirty")
                     Environment.location['B'] = 0
-                    print
-                    ("Room B Has Been Cleaned")
+                    print("Room B Has Been Cleaned")
             else:
                 print("Moving Cleaner To Room B")
 
@@ -41,19 +39,19 @@ class SimpleReflexAgent(Environment):
 
             print("Cleaner Has Benn Randomly Place At Room B")
 
-        if Environment.location['B'] == 1:
-            print("Room B Is Dirty")
-            Environment.location['B'] = 0
-            print("Room B Has Been Cleaned")
+            if Environment.location['B'] == 1:
+                print("Room B Is Dirty")
+                Environment.location['B'] = 0
+                print("Room B Has Been Cleaned")
 
-            print("Moving Cleaner To Room A")
+                print("Moving Cleaner To Room A")
 
-            if Environment.location['A'] == 1:
-                print("Room A Is Dirty")
-            Environment.location['A'] = 0
-            print("Room A Has Been Cleaned")
+                if Environment.location['A'] == 1:
+                    print("Room A Is Dirty")
+                    Environment.location['A'] = 0
+                    print("Room A Has Been Cleaned")
 
-            print("Final Location Status:" + str(Environment.location))
+        print("Final Location Status:" + str(Environment.location))
 
 
 def rand():
